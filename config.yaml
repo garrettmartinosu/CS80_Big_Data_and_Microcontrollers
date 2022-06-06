@@ -1,0 +1,12 @@
+# JupyterHub with PySpark Config
+#
+# Chart config reference:   https://zero-to-jupyterhub.readthedocs.io/en/stable/resources/reference.html
+# Chart default values:     https://github.com/jupyterhub/zero-to-jupyterhub-k8s/blob/HEAD/jupyterhub/values.yaml
+# Available chart versions: https://jupyterhub.github.io/helm-chart/
+#
+singleuser:
+  image:
+    # You may want to replace the "latest" tag with a fixed version from:
+    # https://hub.docker.com/r/jupyter/pyspark-notebook
+    name: jupyter/pyspark-notebook
+    tag: latest
